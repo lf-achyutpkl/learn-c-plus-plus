@@ -34,4 +34,6 @@ Today vast numbers of medium to large-scale applications and projects are writte
 
  ... and list goes on.
 
+# Reference
+* C++ How To Program - Deitel & Deitel
  
