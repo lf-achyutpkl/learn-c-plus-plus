@@ -2,9 +2,10 @@
 
 ## Primitive Built-in Types
 
-Following tables list down six basic C++ data types.<p>
-| **Type**                | **Keyword**|
-|-----------------------	|----------- |
+Following tables list down six basic C++ data types.
+
+| Type                    | Keyword    |
+|----------------------	  |----------  |
 | Boolean               	| bool    	 |
 | Character             	| char    	 |
 | Integer               	| int     	 |
@@ -46,7 +47,6 @@ Following is the example, which will produce correct size of various data types 
     cout << "Size of long int : " << sizeof(long int) << endl;
     cout << "Size of float : " << sizeof(float) << endl;
     cout << "Size of double : " << sizeof(double) << endl;
-    cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
     return 0;
   }
 ```
