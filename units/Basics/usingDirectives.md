@@ -29,4 +29,4 @@ Let's rewrite previous program witout repeating namespace i.e std::.
   }
 ```
 
-`using` directives elimate the need to repeate the std:: prefix as we did in previous programs. This enables a program to use _all_ the names in any standard C++ header (such as < iostream > that a program might include).
+`using` directives elimate the need to repeate the std:: prefix as we did in previous programs. This enables a program to use _all_ the names in any standard C++ header (such as `<iostream>` that a program might include).
