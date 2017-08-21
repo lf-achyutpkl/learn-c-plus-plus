@@ -2,10 +2,10 @@
 
 > Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries.
 
-It is just like saving files with similar names into different folders, so that both folder can be saved without affecting eachother.
+It is just like saving files with similar names into different folders, so that both files can be saved without affecting eachother.
 
 In previous programs, we were using std::cout, std::cin, std::endl, ([:: is a scope resolution operator](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.cbclx01/cplr175.htm)).
-However, We can omit that bolierplat using _using_ directive. 
+However, We can omit that bolierplate using _using_ directive. 
 
 Let's rewrite previous program witout repeating namespace i.e std::.
 
@@ -29,4 +29,4 @@ Let's rewrite previous program witout repeating namespace i.e std::.
   }
 ```
 
-`using` directives elimate the need to repeate the std:: prefix as we did in previous programs. This enables a program to use _all_ the names in any standard C++ header (such as < iostream > that a program might include).
+`using` directives elimate the need to repeate the std:: prefix as we did in previous programs. This enables a program to use _all_ the names in any standard C++ header (such as `<iostream>` that a program might include).
