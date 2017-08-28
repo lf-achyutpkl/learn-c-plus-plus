@@ -1,9 +1,9 @@
 # C++ Loops
 
 1. [while Loop](#whileLoop)
-2. [do...while Loop] (#doWhileLoop)
-3. [for Loop] (#forLoop)
-4. [Nested Loop] (#nestedLoop)
+2. [do...while Loop](#doWhileLoop)
+3. [for Loop](#forLoop)
+4. [Nested Loop](#nestedLoop)
 
 ## <a name="whileLoop"></a>while Loop
 A while loop statement repeatedly executes a target statement as long as a given condition is true.
