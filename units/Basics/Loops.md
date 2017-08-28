@@ -4,6 +4,8 @@
 2. [do...while Loop](#doWhileLoop)
 3. [for Loop](#forLoop)
 4. [Nested Loop](#nestedLoop)
+5. [break Statement](#break)
+6. [continue Statement](#continue)
 
 ## <a name="whileLoop"></a>while Loop
 A while loop statement repeatedly executes a target statement as long as a given condition is true.
@@ -93,7 +95,7 @@ Output:
   value of a: 19
 ```
 
-## <a name="doWhileLoop"></a>for Loop
+## <a name="forLoop"></a>for Loop
 
 A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.
 
@@ -139,7 +141,7 @@ Output:
   value of a: 19
 ```
 
-## <a name="doWhileLoop"></a>
+## <a name="nestedLoop"></a>Nested Loop
 
 A loop can be nested inside of another loop. C++ allows at least 256 levels of nesting.
 
@@ -220,4 +222,117 @@ This would produce the following result:
   83 is prime
   89 is prime
   97 is prime
+```
+
+## <a name="break"></a> break statement
+
+It is sometimes desirable to skip some statements inside the loop or terminate the loop immediately without checking the test expression.
+
+The break statement terminates the loop (for, while and do...while loop) immediately when it is encountered.
+
+Syntax for `break` statement
+```C++
+  break;
+```
+
+Example of break statement.
+
+```C++
+  // Program to calculate the sum of maximum of 10 numbers
+  // Calculates sum until user enters positive number
+
+  #include <iostream>
+  using namespace std;
+  int main()
+  {
+      int i;
+      double number, sum = 0.0;
+      
+      for(i=1; i <= 10; ++i)
+      {
+          cout << "Enter a n" << i << ": ";
+          cin >> number ;
+          
+          // If user enters negative number, loop is terminated
+          if(number < 0.0)
+          {
+              break;
+          }
+          
+          sum += number; // sum = sum + number;
+      }
+      
+      cout << "Sum = " << sum;
+      
+      return 0;
+  }
+```
+
+Output:
+```
+Enter a n1: 2.4
+Enter a n2: 4.5
+Enter a n3: 3.4
+Enter a n4: -3
+Sum = 10.30
+```
+
+
+## <a name="continue"></a> continue statement
+
+The continue statement skips some statements inside the loop.
+
+Syntax for `continue` statement
+```C++
+  continue;
+```
+
+Example of continue statement.
+
+```C++
+  // Program to calculate sum of maximum of 10 numbers
+  // Negative numbers are skipped from calculation
+
+  # include <iostream>
+  using namespace std;
+
+  int main()
+  {
+      int i;
+      double number, sum = 0.0;
+      
+      for(i=1; i <= 10; ++i)
+      {
+          cout << "Enter a n" << i << ": ";
+          cin >> number;
+          
+          // If user enters negative number, loop is terminated
+          if(number < 0.0)
+          {
+              continue;
+          }
+          
+          sum += number; // sum = sum + number;
+      }
+      
+      cout << "Sum = " << sum;
+      
+      return 0;
+  }
+```
+
+Output
+
+```
+Enter a n1: 1.1
+Enter a n2: 2.2
+Enter a n3: 5.5
+Enter a n4: 4.4
+Enter a n5: -3.4
+Enter a n6: -45.5
+Enter a n7: 34.5
+Enter a n8: -4.2
+Enter a n9: -1000
+Enter a n10: 12
+Sum = 59.70
 ```
