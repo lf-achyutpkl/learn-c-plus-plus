@@ -24,7 +24,7 @@ __Write a program to take two integers from user add them and print the sum.__
 
 * __Obtaining _Value_ from the User__ <br/>
 `std::cout << "Enter first integer: ";`
-display _Enter first integer: _. This message is called a **prompt** because it directs the user to take a specific action. 
+display _Enter first integer:_. This message is called a **prompt** because it directs the user to take a specific action. 
 
   `std::cin << number1` uses the _standard input stream object cin_ (of namespace std) and the stream extraction operator, >>, to obtain a value from the keyboard. 
   
