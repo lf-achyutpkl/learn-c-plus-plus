@@ -1,4 +1,4 @@
-# C++ Loops
+# C++ Loop Control
 
 1. [while Loop](#whileLoop)
 2. [do...while Loop](#doWhileLoop)
